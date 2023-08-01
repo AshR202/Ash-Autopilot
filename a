@@ -1,0 +1,18 @@
+    set md to 2/apoapsis.
+    set id to 1/Orbit:semimajoraxis.
+    set mdid to md * id.
+    set GM to constant:g * kerbin:mass.
+    set v1 to sqrt(GM * mdid).
+    set rad to kerbin:radius + apoapsis.
+    set v2 to sqrt(GM / rad).
+    set dv to v2 - v1.
+    set nTime to eta:apoapsis.
+    print "v1 " + v1.
+    print "v2 " + v2.
+    print "GM " +GM.
+    print "rad" + rad.
+    print "nTime " + nTime.
+    print "velocity at: " + velocityAt(ship,nTime).
+    set myNode to node(TimeSpan(nTime),0,0,dv).
+
+    add myNode.
