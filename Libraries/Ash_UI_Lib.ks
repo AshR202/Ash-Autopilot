@@ -4,8 +4,8 @@
 //╚  ═  ╝
 //╔═══════════════════╗
 //╠═══════════════════╣
-//║                   ║
-//║                   ║
+//║     Execute ?     ║
+//║       Y   N       ║
 //║                   ║
 //╚═══════════════════╝
 //╔═══════════════════╗
@@ -288,3 +288,44 @@ function Acknowlege
     ProgramMenu().
 }
 
+function CircMenu
+{
+    BlankUI().
+    print "║  Circularization  ║" at (0,1).
+    InputNeeded.
+    print "║  Circularize at:  ║" at (0,3).
+    set ch to terminal:input:getchar().
+    if ch = "A"
+    {
+        CircAp().
+        BlankUI().
+        print "║  Circularization  ║" at (0,1).
+        print "║   Node  Created   ║" at (0,3).
+        print "║     Execute ?     ║" at (0,5).
+        print "║       Y   N       ║" at (0, 6).
+        set ch to terminal:input:getchar().
+        set ch to terminal:input:clear().
+        if ch = "Y"
+        {
+            ExNode().
+        }
+        else ProgramMenu().
+    }
+    else if ch = "P" 
+    {
+        CircPer().
+        BlankUI().
+        print "║  Circularization  ║" at (0,1).
+        print "║   Node  Created   ║" at (0,3).
+        print "║     Execute ?     ║" at (0,5).
+        print "║       Y   N       ║" at (0, 6).
+        set ch to terminal:input:getchar().
+        set ch to terminal:input:clear().
+        if ch = "Y"
+        {
+            ExNode().
+        }
+        else ProgramMenu().
+    }
+    else ProgramMenu(). 
+}
