@@ -6,7 +6,7 @@ Note: If "INPUT" is displayed under the main window, the program is asking for s
 
 Currently Implemented:
 
-Assent: launches to a 100km circular (ish) orbit.
+Ascent: launches to a 100km circular (ish) orbit.
 
 Circularize: circularizes at apoapsis or periapsis.
 

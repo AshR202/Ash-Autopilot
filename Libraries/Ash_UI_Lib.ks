@@ -56,7 +56,7 @@ function ProgramMenu
     {
         BlankUI().
         print "║     Selected:     ║" at (0,3).
-        print "║      Assent       ║" at (0,4).
+        print "║      Ascent       ║" at (0,4).
         print "║   Confirm: Y  N   ║" at (0,6).
         InputNeeded().
 
