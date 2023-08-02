@@ -1,6 +1,6 @@
 # AshAP
  
-Ash Autopilot is an autopilot using the kOS mod for Kerbal Space Program. To start the autopilot, run the AshAP script.
+Ash Autopilot is an autopilot using the [kOS mod](https://github.com/KSP-KOS/KOS) for Kerbal Space Program. To start the autopilot, run the AshAP script.
 
 Note: If "INPUT" is displayed under the main window, the program is asking for some kind of keyboard input. If no specific inputs are requested, press any key to acknowlege whatever the program has shown you.
 
