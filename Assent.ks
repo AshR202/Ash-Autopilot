@@ -4,8 +4,8 @@
 //╚  ═  ╝
 //╔═══════════════════╗
 //╠═══════════════════╣
-//║        00         ║
-//║                   ║
+//║   Apoapsis Good   ║
+//║      mission      ║
 //║                   ║
 //╚═══════════════════╝
 //╔═══════════════════╗
@@ -37,7 +37,7 @@
 //║   VERSION 1.A.1   ║
 //╚═══════════════════╝
 
-blankUI().
+BlankUI().
 set hasch to terminal:input:haschar().
 print "║      Assent       ║" at (0,1).
 if altitude > 1000 
@@ -45,8 +45,7 @@ if altitude > 1000
     print "║      Error:       ║" at (0,4).
     print "║    Not Gounded    ║" at (0,5).
     print "║     Acknolege     ║" at (0,7).
-    InputNeeded().    
-
+    InputNeeded().
     until hasch = true
     {
         set hasch to terminal:input:haschar().        
@@ -152,13 +151,12 @@ until apoapsis > targAp
         SET ShipSteer TO HEADING(90,15).
         set angDisplay to 15.
     }
-    ELSE IF SHIP:VELOCITY:SURFACE:MAG >= 1100 AND SHIP:VELOCITY:SURFACE:MAG < 1200 
+    ELSE IF SHIP:VELOCITY:SURFACE:MAG >= 1100 and altitude >= 50000
     {
-        if altitude >= 60000
-        {
-            SET ShipSteer TO HEADING(90,10).
-            set angDisplay to 10.
-        }
+
+        SET ShipSteer TO HEADING(90,10).
+        set angDisplay to 10.
+
     }
 
     set ApDisplay to apoapsis.
@@ -168,6 +166,10 @@ until apoapsis > targAp
 }
 lock throttle to 0.
 
+wait until altitude > 80000.
+
 CircAp().
 
-wait 100.
+ExNode().
+
+

@@ -40,12 +40,12 @@
 //runpath("0:AshAPV1A/AshAPV1A").
 
 
-runpath("0:/AshAPV1A/Libraries/lib_navigation").
-runpath("0:/AshAPV1A/Libraries/lib_num_to_formatted_str").
-runpath("0:/AshAPV1A/Libraries/Ash_UI_Lib").
-runPath("0:/AshAPV1A/Libraries/staging").
-runPath("0:/AshAPV1A/Libraries/Manuver_Lib").
-cd("0:/AshAPV1A").
+runpath("0:/AshAP/Libraries/lib_navigation").
+runpath("0:/AshAP/Libraries/lib_num_to_formatted_str").
+runpath("0:/AshAP/Libraries/Ash_UI_Lib").
+runPath("0:/AshAP/Libraries/staging").
+runPath("0:/AshAP/Libraries/Ash_Manuver_Lib").
+cd("0:/AshAP").
 clearscreen.
 RoseUI().
 print "║   Loading .       ║" at (0,1).

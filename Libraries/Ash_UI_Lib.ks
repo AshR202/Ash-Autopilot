@@ -4,7 +4,7 @@
 //╚  ═  ╝
 //╔═══════════════════╗
 //╠═══════════════════╣
-//║      Assent       ║
+//║                   ║
 //║                   ║
 //║                   ║
 //╚═══════════════════╝
@@ -63,7 +63,7 @@ function ProgramMenu
         set ch to terminal:input:getchar().
         if ch = "y"
         {
-            runPath("0:/AshAPV1A/Assent").
+            runPath("0:/AshAP/Assent").
         }
         else if ch = "n" 
         {
@@ -82,7 +82,7 @@ function ProgramMenu
         set ch to terminal:input:getchar().
         if ch = "y"
         {
-            print "write this program dumbass".
+            CircMenu()
         }
         else if ch = "n" 
         {
@@ -101,7 +101,7 @@ function ProgramMenu
         set ch to terminal:input:getchar().
         if ch = "y"
         {
-            print "write this program dumbass".
+            ExNode().
         }
         else if ch = "n" 
         {
@@ -120,7 +120,7 @@ function ProgramMenu
         set ch to terminal:input:getchar().
         if ch = "y"
         {
-            print "write this program dumbass".
+            print "not writen yet, come back later".
         }
         else if ch = "n" 
         {
@@ -139,7 +139,7 @@ function ProgramMenu
         set ch to terminal:input:getchar().
         if ch = "y"
         {
-            print "write this program dumbass".
+            print "not writen yet, come back later".
         }
         else if ch = "n" 
         {
@@ -158,7 +158,7 @@ function ProgramMenu
         set ch to terminal:input:getchar().
         if ch = "y"
         {
-            runpath("0:/AshAPV1A/Information").
+            print "not writen yet, come back later".
         }
         else if ch = "n" 
         {
@@ -274,3 +274,17 @@ function InputNeeded
 {
     print "║       Input       ║" at (0,23).
 }
+
+function Acknowlege
+{
+    InputNeeded().
+    set hasch to terminal:input:clear().
+    set hasch to terminal:input:haschar().
+    until hasch = true
+    {
+        set hasch to terminal:input:haschar().        
+    }
+    set ch to terminal:input:clear().
+    ProgramMenu().
+}
+
