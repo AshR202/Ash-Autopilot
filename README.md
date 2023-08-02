@@ -4,29 +4,29 @@ Ash Autopilot is an autopilot using the kOS mod for Kerbal Space Program. To sta
 
 Note: If "INPUT" is displayed under the main window, the program is asking for some kind of keyboard input. If no specific inputs are requested, press any key to acknowlege whatever the program has shown you.
 
-Currently Implemented:
+## Currently Implemented:
 
-Ascent: launches to a 100km circular (ish) orbit.
+- Ascent: launches to a 100km circular (ish) orbit.
 
-Circularize: circularizes at apoapsis or periapsis.
+- Circularize: circularizes at apoapsis or periapsis.
 
-Execute Node: Executes a maneuver node.
+- Execute Node: Executes a maneuver node.
 
 
-To Do:
+## To Do:
 
-Transfer Moon: will transfer you to a moon
+- Transfer Moon: will transfer you to a moon
 
-Return: returns you from a moon.
+- Return: returns you from a moon.
 
-Information: returns some useful information about current status (partially implemented).
+- Information: returns some useful information about current status (partially implemented).
 
-Other plans:
+## Other plans:
 
-Other orbital maneuvers (plane change, raise apoapsis, etc.)
+- Other orbital maneuvers (plane change, raise apoapsis, etc.)
 
-Interplatetary transfers
+- Interplatetary transfers
 
-Transfer between moons
+- Transfer between moons
 
-Rendezvous. 
+- Rendezvous. 
